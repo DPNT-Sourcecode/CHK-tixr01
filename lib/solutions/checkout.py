@@ -37,6 +37,7 @@ def checkout(skus):
     if len(skus) != (item_A + item_B + item_C +item_D + item_E + item_F + item_G + item_H + item_I + item_J + item_K + item_L + item_M + item_N + item_O + item_P + item_Q + item_R + item_S + item_T + item_U + item_V + item_W + item_X + item_Y + item_Z):
         return -1
 
+    # A
     discount = item_A // 5
     price += discount * 200
 
@@ -48,10 +49,12 @@ def checkout(skus):
     remaining = item_A % 3
     price += remaining * 50
 
+    # C
     price += item_C * 20
 
     price += item_D * 15
 
+    # B - E
     free_B = item_E // 2
     price += item_E * 40
 
@@ -64,10 +67,12 @@ def checkout(skus):
         remaining = item_B % 2
         price += remaining * 30
 
+    # F
     price += item_F * 10
     discount = item_F // 3
     price -= discount * 10
 
+    # G - I - J - L - O - S - T - W - X - Y - Z
     price += item_G * 20
     price += item_I * 35
     price += item_J * 60
@@ -80,6 +85,7 @@ def checkout(skus):
     price += item_Y * 10
     price += item_Z * 50
 
+    # H
     discount = item_H // 10
     price += (discount * 80)
 
