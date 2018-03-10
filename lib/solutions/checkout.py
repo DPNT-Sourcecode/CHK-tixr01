@@ -165,5 +165,11 @@ def checkout(skus):
     price += discount_Z * 45
     reamining_Z = item_Z % 3
 
+    price_20 = reamining_S + reamining_T + reamining_Y
+    price_21 = remaining_Z
+    price_17 = reamining_X
+
+    if remaining_Z != 0:
+
 
     return price
