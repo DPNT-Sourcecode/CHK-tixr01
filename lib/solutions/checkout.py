@@ -15,14 +15,14 @@ def checkout(skus):
     items = skus.split(' ')
     price = 0
     for item in items:
-    	if item[0] not in ['A', 'B', 'C', 'D']:
+    	if item[-1] not in ['A', 'B', 'C', 'D']:
     		return -1
-    	item_type = item[0]
+    	item_type = item[-1]
 
     	try:
-    		portion = int(item[1:])
+    		portion = int(item[:-1])
     	except:
     		return -1
 
     	if item_type == 'A':
-
+    		discounted = portion // 3
