@@ -30,7 +30,9 @@ def checkout(skus):
     item_U = skus.count('U')
     item_V = skus.count('V')
     item_W = skus.count('W')
-    
+    item_X = skus.count('X')
+    item_Y = skus.count('Y')
+    item_Z = skus.count('Z')
 
     if len(skus) != (item_A + item_B + item_C +item_D + item_E + item_F):
         return -1
