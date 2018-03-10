@@ -145,10 +145,10 @@ def checkout(skus):
     price += remaining * 50
 
     # S - T - X - Y - Z
-    price += item_S * 30
+    price += item_S * 20
     price += item_T * 20
-    price += item_X * 90
-    price += item_Y * 10
-    price += item_Z * 50
+    price += item_X * 17
+    price += item_Y * 20
+    price += item_Z * 21
 
     return price
