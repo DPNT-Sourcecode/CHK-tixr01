@@ -18,7 +18,8 @@ def checkout(skus):
 
     discount = item_A // 5
     price += discount * 200
-    
+
+    item_A -= discount
 
     discount = item_A // 3
     price += discount * 130
