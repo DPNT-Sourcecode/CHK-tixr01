@@ -121,8 +121,19 @@ def checkout(skus):
         remaining = item_Q % 3
         price += (remaining * 30)
 
-    price += item_U * 10
-    discount = item_F // 3
-    price -= discount * 10
+    price += item_U * 40
+    discount = item_U // 4
+    price -= discount * 40
+
+    discount = item_V // 3
+    price += discount * 130
+
+    item_V -= (discount * 3)
+
+    discount = item_V // 2
+    price += discount * 90
+
+    remaining = item_V % 2
+    price += remaining * 50
 
     return price
