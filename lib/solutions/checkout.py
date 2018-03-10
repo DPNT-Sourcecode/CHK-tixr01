@@ -202,16 +202,16 @@ def checkout(skus):
                 price += 45
 
     if remaining_20 == 0:
-        if price_17 == 0:
-            price += price_21 * 21
+        if price_21 == 0:
+            price += price_17 * 17
         else:
-            if price_21 == 0:
+            if price_17 == 0:
                 price += price_17 * 17
-            if price_21 == 1 and price_17 == 2:
+            if price_17 == 1 and price_21 == 2:
                 price += 45
-            if price_21 == 1 and price_17 == 1:
-                price += 37
-            if price_21 == 2 and price_17 == 1:
+            if price_17 == 1 and price_21 == 1:
+                price += 38
+            if price_17 == 2 and price_21 == 1:
                 price += 45
 
     return price
