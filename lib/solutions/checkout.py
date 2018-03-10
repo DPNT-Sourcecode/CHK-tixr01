@@ -110,5 +110,19 @@ def checkout(skus):
     remaining = item_P % 5
     price += (remaining * 50)
 
+    free_Q = item_R // 3
+    price += item_R * 50
+
+    if item_Q != 0:
+        item_Q -= free_Q
+        discount = item_Q // 3
+        price += (discount * 80)
+
+        remaining = item_Q % 3
+        price += (remaining * 30)
+
+    price += item_U * 10
+    discount = item_F // 3
+    price -= discount * 10
 
     return price
