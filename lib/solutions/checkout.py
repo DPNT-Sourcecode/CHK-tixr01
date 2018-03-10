@@ -175,7 +175,43 @@ def checkout(skus):
 
     if (price_21 + price_17 + remaining_20) % 3 == 0:
         price += ((price_21 + price_17 + remaining_20) // 3) * 45
-    
+    if price_21 == 0:
+        if price_17 == 0:
+            price += remaining_20 * 20
+        else:
+            if remaining_20 == 0:
+                price += price_17 * 17
+            if remaining_20 == 1 and price_17 == 2:
+                price += 45
+            if remaining_20 == 1 and price_17 == 1:
+                price += 37
+            if remaining_20 == 2 and price_17 == 1:
+                price += 45
 
+    if remaining_20 == 0:
+        if price_17 == 0:
+            price += price_21 * 21
+        else:
+            if price_21 == 0:
+                price += price_17 * 17
+            if price_21 == 1 and price_17 == 2:
+                price += 45
+            if price_21 == 1 and price_17 == 1:
+                price += 38
+            if price_21 == 2 and price_17 == 1:
+                price += 45
+
+    if remaining_20 == 0:
+        if price_17 == 0:
+            price += price_21 * 21
+        else:
+            if price_21 == 0:
+                price += price_17 * 17
+            if price_21 == 1 and price_17 == 2:
+                price += 45
+            if price_21 == 1 and price_17 == 1:
+                price += 37
+            if price_21 == 2 and price_17 == 1:
+                price += 45
 
     return price
