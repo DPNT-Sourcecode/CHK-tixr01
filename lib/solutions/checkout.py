@@ -13,6 +13,24 @@ def checkout(skus):
     item_D = skus.count('D')
     item_E = skus.count('E')
     item_F = skus.count('F')
+    item_G = skus.count('G')
+    item_H = skus.count('H')
+    item_I = skus.count('I')
+    item_J = skus.count('J')
+    item_K = skus.count('K')
+    item_L = skus.count('L')
+    item_M = skus.count('M')
+    item_N = skus.count('N')
+    item_O = skus.count('O')
+    item_P = skus.count('P')
+    item_Q = skus.count('Q')
+    item_R = skus.count('R')
+    item_S = skus.count('S')
+    item_T = skus.count('T')
+    item_U = skus.count('U')
+    item_V = skus.count('V')
+    item_W = skus.count('W')
+    
 
     if len(skus) != (item_A + item_B + item_C +item_D + item_E + item_F):
         return -1
