@@ -72,6 +72,12 @@ def checkout(skus):
     price += item_I * 35
     price += item_J * 60
     price += item_L * 90
-    price += item
+    price += item_O * 10
+    price += item_S * 30
+    price += item_T * 20
+    price += item_W * 20
+    price += item_X * 90
+    price += item_Y * 10
+    price += item_Z * 50
 
     return price
