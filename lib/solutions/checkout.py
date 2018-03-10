@@ -8,7 +8,7 @@ def checkout(skus):
     price = 0
     temporary = ''
 
-    for item in items:
+    for item in skus:
         if item not in ['A', 'B', 'C', 'D']:
             temporary += item
         else:
@@ -37,5 +37,7 @@ def checkout(skus):
 
             if item_type == 'D':
                 price += portion * 15
+
+        temporary = ''
 
     return price
