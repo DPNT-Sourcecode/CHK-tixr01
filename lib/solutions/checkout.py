@@ -13,7 +13,7 @@ def checkout(skus):
     item_D = skus.count('D')
     item_E = skus.count('E')
 
-    if len(skus) != (item_A + item_B + item_C +item_D):
+    if len(skus) != (item_A + item_B + item_C +item_D + item_E):
         return -1
 
     discount = item_A // 5
