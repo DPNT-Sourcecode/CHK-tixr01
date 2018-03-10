@@ -44,4 +44,8 @@ def checkout(skus):
         remaining = item_B % 2
         price += remaining * 30
 
+    price += item_F * 10
+    discount = item_F // 3
+    price -= discount * 10
+
     return price
