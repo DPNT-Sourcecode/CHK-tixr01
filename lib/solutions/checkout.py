@@ -16,6 +16,10 @@ def checkout(skus):
     if len(skus) != (item_A + item_B + item_C +item_D):
         return -1
 
+    discount = item_A // 5
+    price += discount * 200
+    
+
     discount = item_A // 3
     price += discount * 130
 
