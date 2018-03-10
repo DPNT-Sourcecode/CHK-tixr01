@@ -39,7 +39,9 @@ def checkout(skus):
 
     free_B = item_E // 2
     price += item_E * 40
-    if item_B != 0:
+    if item_B < free_B:
+        price -= item_B * 30
+    else:
         price -= free_B * 30
 
     return price
