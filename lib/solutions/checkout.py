@@ -52,6 +52,7 @@ def checkout(skus):
     # C
     price += item_C * 20
 
+    # D
     price += item_D * 15
 
     # B - E
@@ -99,10 +100,10 @@ def checkout(skus):
 
     # K
     discount = item_K // 2
-    price += (discount * 150)
+    price += (discount * 120)
 
     remaining = item_K % 2
-    price += (remaining * 80)
+    price += (remaining * 70)
 
     # N - M
     free_M = item_N // 3
