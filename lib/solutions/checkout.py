@@ -11,6 +11,7 @@ def checkout(skus):
     item_B = skus.count('B')
     item_C = skus.count('C')
     item_D = skus.count('D')
+    item_E = skus.count('E')
 
     if len(skus) != (item_A + item_B + item_C +item_D):
         return -1
