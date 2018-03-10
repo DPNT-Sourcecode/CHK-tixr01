@@ -6,38 +6,8 @@
 
 def checkout(skus):
     price = 0
-    temporary = ''
 
-    for item in skus:
-        if item not in ['A', 'B', 'C', 'D']:
-            temporary += item
-        else:
-            item_type = item
-            try:
-               portion = int(temporary)
-            except:
-               return -1
+    
 
-            if item_type == 'A':
-                discounted = portion // 3
-                price += discounted * 130
-
-                remaining_A = portion % 3
-                price += remaining * 50
-
-            if item_type == 'B':
-                discounted = portion // 2
-                price += discounted * 45
-
-                remaining_B = portion % 2
-                price += remaining * 30
-
-            if item_type == 'C':
-                price += portion * 20
-
-            if item_type == 'D':
-                price += portion * 15
-
-        temporary = ''
 
     return price
