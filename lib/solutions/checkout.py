@@ -79,12 +79,7 @@ def checkout(skus):
     price += item_J * 60
     price += item_L * 90
     price += item_O * 10
-    price += item_S * 30
-    price += item_T * 20
     price += item_W * 20
-    price += item_X * 90
-    price += item_Y * 10
-    price += item_Z * 50
 
     # H
     discount = item_H // 10
@@ -148,5 +143,12 @@ def checkout(skus):
 
     remaining = item_V % 2
     price += remaining * 50
+
+    # S - T - X - Y - Z
+    price += item_S * 30
+    price += item_T * 20
+    price += item_X * 90
+    price += item_Y * 10
+    price += item_Z * 50
 
     return price
