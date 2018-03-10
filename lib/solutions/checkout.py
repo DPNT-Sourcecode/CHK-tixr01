@@ -34,7 +34,7 @@ def checkout(skus):
     item_Y = skus.count('Y')
     item_Z = skus.count('Z')
 
-    if len(skus) != (item_A + item_B + item_C +item_D + item_E + item_F):
+    if len(skus) != (item_A + item_B + item_C +item_D + item_E + item_F + item_G + item_H + item_I + item_J + item_K + item_L + item_M + item_N + item_O + item_P + item_Q + item_R + item_S + item_T + item_U + item_V + item_W + item_X + item_Y + item_Z):
         return -1
 
     discount = item_A // 5
@@ -67,5 +67,11 @@ def checkout(skus):
     price += item_F * 10
     discount = item_F // 3
     price -= discount * 10
+
+    price += item_G * 20
+    price += item_I * 35
+    price += item_J * 60
+    price += item_L * 90
+    price += item
 
     return price
