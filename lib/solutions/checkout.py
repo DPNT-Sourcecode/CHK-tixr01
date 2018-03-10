@@ -5,13 +5,11 @@
 
 
 def checkout(skus):
-    items = skus.split(' ')
     price = 0
-    if not items:
-        return -1
+    temporary = ''
 
     for item in items:
-        if item[-1] not in ['A', 'B', 'C', 'D']:
+        if item not in ['A', 'B', 'C', 'D']:
             return -1
         item_type = item[-1]
 
