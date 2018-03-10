@@ -7,6 +7,9 @@
 def checkout(skus):
     items = skus.split(' ')
     price = 0
+    if not items:
+        return -1
+
     for item in items:
         if item[-1] not in ['A', 'B', 'C', 'D']:
             return -1
