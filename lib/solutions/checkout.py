@@ -147,27 +147,27 @@ def checkout(skus):
     # S - T - X - Y - Z
     discount_S = item_S // 3
     price += discount_S * 45
-    reamining_S = item_S % 3
+    remaining_S = item_S % 3
 
     discount_T = item_T // 3
     price += discount_T * 45
-    reamining_T = item_T % 3
+    remaining_T = item_T % 3
 
     discount_X = item_X // 3
     price += discount_X * 45
-    reamining_X = item_X % 3
+    remaining_X = item_X % 3
 
     discount_Y = item_Y // 3
     price += discount_Y * 45
-    reamining_Y = item_Y % 3
+    remaining_Y = item_Y % 3
 
     discount_Z = item_Z // 3
     price += discount_Z * 45
     remaining_Z = item_Z % 3
 
-    price_20 = reamining_S + reamining_T + reamining_Y
+    price_20 = remaining_S + remaining_T + remaining_Y
     price_21 = remaining_Z
-    price_17 = reamining_X
+    price_17 = remaining_X
 
     discount = price_20 // 3
     price += discount * 45
