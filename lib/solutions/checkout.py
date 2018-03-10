@@ -171,6 +171,11 @@ def checkout(skus):
 
     discount = price_20 // 3
     price += discount * 45
+    remaining_20 = price_20 % 3
+
+    if (price_21 + price_17 + remaining_20) % 3 == 0:
+        price += ((price_21 + price_17 + remaining_20) // 3) * 45
+    
 
 
     return price
