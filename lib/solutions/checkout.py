@@ -26,3 +26,10 @@ def checkout(skus):
 
     	if item_type == 'A':
     		discounted = portion // 3
+    		price += discounted * 130
+
+    		remaining_A = portion % 3
+    		price += remaining * 50
+
+    	if item_type == 'B':
+    		
